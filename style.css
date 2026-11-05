@@ -8,21 +8,61 @@ h1 {
     color: #333333;
 }
 
-/* tabela com as bordas juntas */
-table {
+/* Tabela 1: trajetória acadêmica e profissional, com as bordas juntas */
+.trajetoria {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #1e3a8a;
+}
+
+.trajetoria caption {
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+.trajetoria th, .trajetoria td {
+    height: 45px;
+    padding: 12px;
+    border: 1px solid #999999;
+    vertical-align: middle;
+}
+
+/* as 2 cores de fundo: cabeçalhos em azul escuro e células em azul bem claro */
+.trajetoria th {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.trajetoria td {
+    background-color: #eef3fb;
+    color: #333333;
+    text-align: center;
+}
+
+/* nomes dos estudantes alinhados à esquerda */
+.trajetoria tbody th {
+    text-align: left;
+}
+
+/* Tabela 2: rotina semanal, com as bordas juntas */
+.rotina {
     width: 100%;
     border-collapse: collapse;
     border: 2px solid #c2410c;
 }
 
-caption {
+.rotina caption {
     padding: 10px;
     font-size: 1.5rem;
     font-weight: bold;
     color: #c2410c;
 }
 
-th, td {
+.rotina th, .rotina td {
     height: 50px;
     padding: 12px;
     border: 1px solid #999999;
@@ -30,14 +70,14 @@ th, td {
 }
 
 /* as 2 cores de fundo: cabeçalhos em laranja e células em bege claro */
-th {
+.rotina th {
     background-color: #c2410c;
     color: #ffffff;
     font-weight: bold;
     text-align: left;
 }
 
-td {
+.rotina td {
     background-color: #fdf1e9;
     color: #333333;
     text-align: center;
